@@ -1,0 +1,106 @@
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+body {
+  position: relative;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-image: url("../images/bg-mobile.png");
+  background-size: cover;
+}
+
+body p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  color: #dddbff;
+}
+
+body main {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+section {
+  background-color: #1d2c67;
+  border-radius: 12px;
+}
+
+section:first-of-type {
+  border-radius: 12px 95px 12px 12px;
+}
+
+.iconBlock {
+  position: relative;
+  background-color: #0c122c;
+  height: 50px;
+  width: 50px;
+  border-radius: 10px;
+}
+
+.progress {
+  width: 100%;
+  height: 20px;
+  background-color: #151e49;
+  border-radius: 50px;
+  padding: 3px;
+}
+
+.progress span {
+  display: block;
+  height: 100%;
+  width: 81%;
+  border-radius: 50px;
+  background: -webkit-gradient(linear, left top, right top, from(#ffa399), to(#ff4d97));
+  background: linear-gradient(to right, #ffa399, #ff4d97);
+}
+
+.progress span::after {
+  display: block;
+  position: relative;
+  left: 95%;
+  top: 2px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  content: '';
+  background-color: white;
+}
+
+.left {
+  position: relative;
+  top: 70px;
+  background-color: white;
+  width: 170px;
+  height: 70px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.left p {
+  color: black;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-size: 40px;
+}
+
+.left span {
+  font-size: 14px;
+  color: #848794;
+  vertical-align: middle;
+}
+
+footer {
+  color: #dddbff;
+  position: fixed;
+  bottom: 0px;
+}
+/*# sourceMappingURL=style.css.map */
