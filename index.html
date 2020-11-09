@@ -11,8 +11,8 @@
     <title>Frontend Mentor | Fylo data storage component</title>
   </head>
   <body>
-    <main class="container mx-auto p-6">
-      <section class="p-12 mb-6">
+    <main class=" container mx-auto p-6 lg:flex lg:grid lg:grid-cols-5 lg:gap-6">
+      <section class="p-12 mb-6 lg:mb-0 lg:mt-auto lg:col-span-2">
           <img src="images/logo.svg" alt="" class="mb-6">
         <div class="flex space-x-6">
           <div class="iconBlock">
@@ -27,8 +27,8 @@
         </div>
       </section>
 
-      <section class="p-8 mb-12">
-        <p class="text-center">You've used <b>815 GB</b> of your storage</p>
+      <section class="p-8 mb-12 lg:mb-0 lg:mt-auto lg:col-span-3">
+        <p class="text-center lg:text-left">You've used <b>815 GB</b> of your storage</p>
         <div class="progress my-3">
           <span></span>
         </div>
@@ -36,12 +36,12 @@
           <p><b>0 GB</b></p>
           <p><b>1000 GB</b></p>
         </div>
-        <div class="left mx-auto">
+        <div class="left-card mx-auto lg:mr-0">
             <p class="text-center">185 <span>GB LEFT</span></p>
         </div>
       </section>
     </main>
-    <footer class="text-center p-8">
+    <footer class="w-full text-center mx-auto p-8 ">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
       Coded by <a href="#">MarcGlug</a>
     </footer>

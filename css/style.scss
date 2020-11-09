@@ -5,6 +5,7 @@ $darkerBlue: hsl(229, 57%, 11%);
 $bgprogress: #151e49;
 $gradient: linear-gradient(to right, hsl(6, 100%, 80%),hsl(335, 100%, 65%) );
 
+
 .center{
     position:absolute;
     top: 50%;
@@ -17,6 +18,7 @@ body{
     height: 100vh;
     margin: 0;
     padding: 0;
+    box-sizing:content-box;
     background-image: url("../images/bg-mobile.png");
     background-size: cover;
 
@@ -40,6 +42,9 @@ section{
 
 section:first-of-type{
     border-radius: 12px 95px 12px 12px;
+}
+section:nth-of-type(2){
+    height: 160px;
 }
 
 .iconBlock{
@@ -68,7 +73,8 @@ section:first-of-type{
     span::after{
         display: block;
         position:relative;
-        left:95%;
+        float: right;
+        right:3px;
         top:2px;
         width:10px;
         height:10px;
@@ -78,9 +84,9 @@ section:first-of-type{
     }
 }
 
-.left{
+.left-card{
     position: relative;
-    top:70px;
+    top:10px;
     background-color: white;
     width: 170px;
     height: 70px;
@@ -105,4 +111,35 @@ footer{
     color:$paleBlue;
     position: fixed;
     bottom: 0px;
+}
+
+@media screen and (min-width: 1024px){
+
+    body{
+        background-color: $darkerBlue;
+        background-image: url("../images/bg-desktop.png");
+ 
+    }
+
+    .left-card{
+        top: -160px;
+         
+    }
+
+    .left-card:after{
+        display:block;
+        position:relative;
+        content: '';
+        margin-left:auto;
+        top:-28px;
+
+        //Triangle
+        width:0px;
+        height:0px;
+        border-top: 10px solid transparent;
+        border-right: 50px solid white;
+        border-bottom: 50px solid transparent;
+     
+    }
+
 }

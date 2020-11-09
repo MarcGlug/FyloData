@@ -11,6 +11,8 @@ body {
   height: 100vh;
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
   background-image: url("../images/bg-mobile.png");
   background-size: cover;
 }
@@ -35,6 +37,10 @@ section {
 
 section:first-of-type {
   border-radius: 12px 95px 12px 12px;
+}
+
+section:nth-of-type(2) {
+  height: 160px;
 }
 
 .iconBlock {
@@ -65,7 +71,8 @@ section:first-of-type {
 .progress span::after {
   display: block;
   position: relative;
-  left: 95%;
+  float: right;
+  right: 3px;
   top: 2px;
   width: 10px;
   height: 10px;
@@ -74,9 +81,9 @@ section:first-of-type {
   background-color: white;
 }
 
-.left {
+.left-card {
   position: relative;
-  top: 70px;
+  top: 10px;
   background-color: white;
   width: 170px;
   height: 70px;
@@ -84,7 +91,7 @@ section:first-of-type {
   font-weight: bold;
 }
 
-.left p {
+.left-card p {
   color: black;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -92,7 +99,7 @@ section:first-of-type {
   font-size: 40px;
 }
 
-.left span {
+.left-card span {
   font-size: 14px;
   color: #848794;
   vertical-align: middle;
@@ -102,5 +109,27 @@ footer {
   color: #dddbff;
   position: fixed;
   bottom: 0px;
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    background-color: #0c122c;
+    background-image: url("../images/bg-desktop.png");
+  }
+  .left-card {
+    top: -160px;
+  }
+  .left-card:after {
+    display: block;
+    position: relative;
+    content: '';
+    margin-left: auto;
+    top: -28px;
+    width: 0px;
+    height: 0px;
+    border-top: 10px solid transparent;
+    border-right: 50px solid white;
+    border-bottom: 50px solid transparent;
+  }
 }
 /*# sourceMappingURL=style.css.map */
