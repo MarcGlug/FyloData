@@ -115,6 +115,9 @@ footer {
   body {
     background-color: #0c122c;
     background-image: url("../images/bg-desktop.png");
+    background-size: 100% 50%;
+    background-repeat: no-repeat;
+    background-position: bottom;
   }
   .left-card {
     top: -160px;

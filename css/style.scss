@@ -118,6 +118,9 @@ footer{
     body{
         background-color: $darkerBlue;
         background-image: url("../images/bg-desktop.png");
+        background-size: 100% 50%;
+        background-repeat: no-repeat;
+        background-position: bottom;
  
     }
 
